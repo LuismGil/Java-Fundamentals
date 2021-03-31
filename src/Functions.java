@@ -16,7 +16,9 @@ public class Functions {
 
         System.out.println("Pesos to Dollar: " + convertToDollar(1000, "MXN"));
         System.out.println("Real to Dollar: " + convertToDollar(1000, "BRL"));
+
     }
+
 
 
     public static double circleArea(double r) {
@@ -28,9 +30,18 @@ public class Functions {
     }
 
     public static double sphereVolume(double r) {
-        return (4/3) * Math.PI * Math.pow(r, 3);
+        return (4 / 3) * Math.PI * Math.pow(r, 3);
     }
 
+    /**
+     *  Description: function that converts an amount to dollar by specifying its currency
+     *
+     * @param quantity Amount of money
+     * @param currency Currency type: only accepts MXN or BRL
+     * @return quantity returns the updated amount in dollars
+     *
+     *
+     * */
     public static double convertToDollar(double quantity, String currency) {
         // MXN BRL
         switch (currency) {
